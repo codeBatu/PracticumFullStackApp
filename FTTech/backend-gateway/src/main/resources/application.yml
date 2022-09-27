@@ -1,0 +1,25 @@
+server:
+  port: 8080
+
+management:
+  endpoint.gateway.enabled: true
+  endpoints.web.exposure.include: gateway
+
+spring:
+  application.name: backend-gateway
+  cloud:
+    gateway:
+      discovery.locator.enabled: true
+      routes:
+        - id: account-service
+          uri: http://localhost:8089/
+          predicates:
+            Path=/account/**
+          filters:
+            - AuthFilter
+
+        - id: login-service
+          uri: http://localhost:8087/
+          predicates:
+            Path=/api/login/**
+
