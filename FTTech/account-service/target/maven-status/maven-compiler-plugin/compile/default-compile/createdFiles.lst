@@ -1,0 +1,10 @@
+com\practicum\fttech\accountservice\services\AccountService.class
+com\practicum\fttech\accountservice\controller\AccountController.class
+com\practicum\fttech\accountservice\model\Account.class
+com\practicum\fttech\accountservice\AccountServiceApplication.class
+com\practicum\fttech\accountservice\repository\AccRepository.class
+com\practicum\fttech\accountservice\repository\TransactionRepository.class
+com\practicum\fttech\accountservice\services\ExchangeServices.class
+com\practicum\fttech\accountservice\controller\AccountInformation.class
+com\practicum\fttech\accountservice\model\TransactionType.class
+com\practicum\fttech\accountservice\model\Transaction.class
